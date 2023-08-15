@@ -29,5 +29,23 @@ Basically full implementation of Bitwarden API is provided including:
  * YubiKey and Duo support
  * Emergency Access
  
----
 
+## Vorbereitungen
+- Docker
+- Docker-Compose
+- Portainer (optional)
+- Domain oder Subdomain
+
+## Installation
+
+```sh
+mkdir docker
+cd docker
+mkdir Vaultwarden
+mkdir Vaultwarden
+nano docker-compose.yml
+```
+
+## Importieren der docker-compose.yml Datei
+
+Kopiere nun den Inhalt aus der docker-compose.yml.txt Datei in deine eben erstellte .yml datei und passe es entsprechend an.
