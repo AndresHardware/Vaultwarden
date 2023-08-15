@@ -49,3 +49,9 @@ nano docker-compose.yml
 ## Importieren der docker-compose.yml Datei
 
 Kopiere nun den Inhalt aus der docker-compose.yml.txt Datei in deine eben erstellte .yml datei und passe es entsprechend an.
+
+Anschließend kann der Container ausgerollt werden.
+
+```sh
+docker-compose up -d
+```
