@@ -12,6 +12,7 @@
 # Host your own Vaultwarden with NGINX
 
 Diese Repository zeigt dir, wie du deinen eigenen Vaultwarden Passwort Manager Server erstellen und konfigurieren kannst. Ich nutzte hierfür Proxmox, das ganze kann aber auch mit einem RaspberryPi oder vergleichbarer Hardware gemacht werden.
+Eine Ausführliche Anleitung findet du auf meinem [YouTube Kanal](https://www.youtube.com/@andreshardware).
 
 
 
@@ -28,3 +29,5 @@ Basically full implementation of Bitwarden API is provided including:
  * YubiKey and Duo support
  * Emergency Access
  
+---
+
