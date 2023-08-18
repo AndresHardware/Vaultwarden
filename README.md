@@ -61,6 +61,7 @@ docker-compose up -d
 ```
 
 ## Admin-Token als Hash Wert erstellen
+Nach dem generieren des Admin-Token kann dieser in die Docker-Compose Datei eingefügt werden, hierbei muss vor jedem "$"- Zeichen ein weiteres "$" ergänzt werden!
 ```sh
 # Using the Bitwarden defaults
 echo -n "MySecretPassword" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4
