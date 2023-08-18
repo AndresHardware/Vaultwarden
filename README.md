@@ -31,10 +31,14 @@ Basically full implementation of Bitwarden API is provided including:
  
 
 ## Vorbereitungen
-- Docker
-- Docker-Compose
-- Portainer (optional)
-- Domain oder Subdomain
+```sh
+apt-get update && apt-get upgrade -y && apt autoremove -y
+apt install curl
+apt install argon2
+
+curl -sSL https://get.docker.com | sh
+apt install docker-compose -y
+```
 
 ## Installation
 
