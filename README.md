@@ -50,6 +50,14 @@ mkdir Vaultwarden
 nano docker-compose.yml
 ```
 
+## Admin-Token als Hash Wert erstellen
+Nach dem generieren des Admin-Token kann dieser in die Docker-Compose Datei eingefügt werden, hierbei muss vor jedem "$"- Zeichen ein weiteres "$" ergänzt werden!
+```sh
+# Using the Bitwarden defaults
+echo -n "MySecretPassword" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4
+```
+
+
 ## Importieren der docker-compose.yml Datei
 
 Kopiere nun den Inhalt aus der docker-compose.yml.txt Datei in deine eben erstellte .yml datei und passe es entsprechend an.
@@ -59,11 +67,3 @@ Anschließend kann der Container ausgerollt werden.
 ```sh
 docker-compose up -d
 ```
-
-## Admin-Token als Hash Wert erstellen
-Nach dem generieren des Admin-Token kann dieser in die Docker-Compose Datei eingefügt werden, hierbei muss vor jedem "$"- Zeichen ein weiteres "$" ergänzt werden!
-```sh
-# Using the Bitwarden defaults
-echo -n "MySecretPassword" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4
-```
-
