@@ -59,3 +59,10 @@ Anschließend kann der Container ausgerollt werden.
 ```sh
 docker-compose up -d
 ```
+
+## Admin-Token als Hash Wert erstellen
+```sh
+# Using the Bitwarden defaults
+echo -n "MySecretPassword" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4
+```
+
