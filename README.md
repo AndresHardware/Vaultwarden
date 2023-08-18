@@ -67,3 +67,7 @@ Anschließend kann der Container ausgerollt werden.
 ```sh
 docker-compose up -d
 ```
+
+## Domain über Proxy Manager mit der IP Adresse verknüpfen
+
+Als nächstes die Domain mit der IP-Adresse des Vaultwarden verknüpfen und die SSL verschlüselung aktivieren.
